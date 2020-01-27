@@ -1,0 +1,116 @@
+<head>
+    
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Raleway&display=swap" rel="stylesheet">
+
+    
+    <style>
+        p{
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        h1{
+            font-family: 'Luckiest Guy', cursive;  
+            top:10px;
+            width:100%;
+            text-align:center;
+            font-size: 60px;
+            color: #BFD1E5;
+        }
+        
+        
+        .first{
+            font-weight: 200;
+            font-size: 20px;
+            float: left;
+            top: 150px;
+            /*position: relative;*/
+            
+        }  
+        
+        div{
+            top: 250px;
+            position: absolute;
+        }
+        
+        .op{
+            top: 350px;
+            left: 30px;
+            position: absolute;
+        }
+        
+        button{
+            border: #D8BFAA solid 5px;
+            padding: 20px 45px;
+            background-color: transparent;
+            left: 15px;
+            margin: 40px;
+            transition: 500ms;
+            color: #d8bfaa;
+            left: 300px;
+            align-self: center;
+        }
+        
+        button:hover{
+            border: transparent solid 5px;
+            padding: 20px 45px;
+            background-color: #D8BFAA;
+            left: 15px;
+            margin: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .invisible{
+            color: white;
+            font-size: 30px;
+        }
+        
+        
+        
+    </style>
+    
+    <script>
+        
+        function Head(){
+            
+            
+            document.getElementById("something").innerHTML = "Headaches can be caused by a variety of reasons <br> 1) Sleep - A lack of sleep or a change in your sleep cycle can you to have headaches... <br> 2) Skipping meals - It's important to make sure you eat at least <b>3</b> meals per day to make sure you have enough energy to get through your day. <br> 3) Foods - certain foods, usually processed, that contain nitrates can also cause youto have headaches <br> 4) Dehydration - this is a common reason for headaches. Drink more water! <br> <br>However, there can be other reasons for headaches. These are usually more severe so please don't think that this is your reason? <br> <br> 1) Headaches can be caused by sinus infections, which is when your sinus (the space inside you nose) becomes inflammed. There is usually no need to see a doctor for this <br> 2) Concussions <br> 3) Brain Tumor - this is a very extreme case. One symptom is frequent and severe headaches, along with vomiting, vision problems, and more";
+            //document.getElementById("button").innerHTML = "Learn More";
+        }
+        
+        function Throat(){
+            document.getElementById("something").innerHTML = "There are a variety of reasons that your throat may hurt <br><br> 1) Cold or flu - one of the most common symptoms of the flu or cold is a sore throat so that's really nothing to worry about and there is no need to go to the doctor. <br> 2) Strep Throat - Strep Throat is another common reason for sore throats, mostly in children. It can be diagnosed by a quick test done by a <b>doctor</b>. It can't be treated with normal houshold medicines, instead you normally have to get antibiotics prescribed to you, although it can usually be cured within a few days. <br> 3) Allergies <br> 4) Air Pollution and other chemicals - While visiting places with a lot of air pollution, you may find yourself with a sore throat. This can also occur when you are around a lot of smoke or chemicals <br> 5) Gastroesophageal reflux disease - This is a condition in which acid from the stomach comes back up into the esophagus. <br> 5) Tumor - In extremely rare cases, sore throats can mean that there is a tumor in your throat. <br><br> When to call the doctor: <br><br> - blood in your saliva <br> -trouble swallowing <br> -a sore throat that lasts longer than a week <br> -trouble breathing <br>";
+            //document.getElementById("button").innerHTML = "Learn More";
+        }
+        
+        function Arms(){
+            document.getElementById("something").innerHTML = "Wrist Pain: <br> -One main reason people get wrist pain is sprains and fractures. Normally minor sprains simply need ice, but if your pain lasts for more than a few days then it may be time to see a doctor. Sudden impacts on surfaces, for example, falling onto your wrist, can cause sprains and fractures <br> -Another reason for wrist pain can be some kind of repetative stress motion. This includes things like writing, hitting a tennis ball, etc. A repeated motion for hours on end can cause your muscles to be inflammed <br> - Carpal Tunnel Syndrome - this is caused when the median nerve, that goes the hand, gets squeezed. This can end up causing pain, tingling, and numbness. <br><br> Shoulder Pain: <br> -In most of the cases, shoulder pain is caused by overuse of the shoulder. This why swimmers, for example, are at an increased risk of shoulder pain. OVeruse of the shoulder can end up causing rotator cuff tendonitis, which is common among athletes. <br> Disuse Symdrome - Disuse Syndrome can be caused by a period of immobility, for example, bedrest. This can end up causing muscle stiffness, and can create weaker muscles" ;
+            //document.getElementById("button").innerHTML = "Learn More";
+        }
+        function Stomach(){
+            document.getElementById("something").innerHTML = "" ;
+            //document.getElementById("button").innerHTML = "Learn More";
+        }
+    </script>
+</head>
+
+
+<body>
+  
+    <h1>Symptom Detective</h1>
+    
+    <div>
+        <button onclick="Head()">Head</button>
+        <button onclick="Throat()">Throat</button>
+        <button onclick="Arms()">Arms/Wrist</button>
+        <button onclick="Stomach()">Stomach</button>
+        <button onclick="Ankles()">Legs/Ankles</button>
+        
+    </div>
+    
+    <p id="something" class= "op"></p>
+
+    <p class="invisible">something here but you can't see</p>
+    
+    
+</body>
